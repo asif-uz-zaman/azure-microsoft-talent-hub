@@ -2,40 +2,24 @@ import { Clock, Calendar, Award, Users2 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-
 export const Staffing = () => {
-  const staffingOptions = [
-    {
-      icon: <Clock className="h-10 w-10 text-accent" />,
-      title: "Hourly Staffing",
-      description: "Flexible hourly engagement for specific tasks and short-term projects",
-      features: ["On-demand expertise", "Flexible scheduling", "Pay as you use", "Quick deployment"],
-      rate: "Starting at $50/hour",
-      popular: false
-    },
-    {
-      icon: <Calendar className="h-10 w-10 text-accent" />,
-      title: "Monthly Contracts",
-      description: "Dedicated resources for ongoing projects and long-term initiatives",
-      features: ["Dedicated engineer", "Consistent availability", "Deep project knowledge", "Cost-effective"],
-      rate: "Starting at $4,000/month",
-      popular: true
-    }
-  ];
-
-  const certifications = [
-    "Microsoft Azure Solutions Architect",
-    "Microsoft 365 Certified Administrator",
-    "Microsoft Copilot Specialist",
-    "Azure DevOps Engineer",
-    "Microsoft Security Administrator",
-    "Azure Data Engineer",
-    "Power Platform Developer",
-    "Microsoft Teams Administrator"
-  ];
-
-  return (
-    <section id="staffing" className="py-20 bg-secondary/30">
+  const staffingOptions = [{
+    icon: <Clock className="h-10 w-10 text-accent" />,
+    title: "Hourly Staffing",
+    description: "Flexible hourly engagement for specific tasks and short-term projects",
+    features: ["On-demand expertise", "Flexible scheduling", "Pay as you use", "Quick deployment"],
+    rate: "Starting at $50/hour",
+    popular: false
+  }, {
+    icon: <Calendar className="h-10 w-10 text-accent" />,
+    title: "Monthly Contracts",
+    description: "Dedicated resources for ongoing projects and long-term initiatives",
+    features: ["Dedicated engineer", "Consistent availability", "Deep project knowledge", "Cost-effective"],
+    rate: "Starting at $4,000/month",
+    popular: true
+  }];
+  const certifications = ["Microsoft Azure Solutions Architect", "Microsoft 365 Certified Administrator", "Microsoft Copilot Specialist", "Azure DevOps Engineer", "Microsoft Security Administrator", "Azure Data Engineer", "Power Platform Developer", "Microsoft Teams Administrator"];
+  return <section id="staffing" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -49,19 +33,12 @@ export const Staffing = () => {
 
         {/* Staffing Options */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {staffingOptions.map((option, index) => (
-            <Card 
-              key={index}
-              className={`relative bg-gradient-card border-border shadow-card hover:shadow-professional transition-all duration-300 hover:scale-105 animate-slide-up ${
-                option.popular ? 'ring-2 ring-primary' : ''
-              }`}
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              {option.popular && (
-                <Badge className="absolute -top-3 left-6 bg-primary text-primary-foreground px-4 py-1">
+          {staffingOptions.map((option, index) => <Card key={index} className={`relative bg-gradient-card border-border shadow-card hover:shadow-professional transition-all duration-300 hover:scale-105 animate-slide-up ${option.popular ? 'ring-2 ring-primary' : ''}`} style={{
+          animationDelay: `${index * 0.2}s`
+        }}>
+              {option.popular && <Badge className="absolute -top-3 left-6 bg-primary text-primary-foreground px-4 py-1">
                   Most Popular
-                </Badge>
-              )}
+                </Badge>}
               <CardHeader className="text-center">
                 <div className="mb-4 flex justify-center">
                   {option.icon}
@@ -78,22 +55,16 @@ export const Staffing = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-8">
-                  {option.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-muted-foreground">
+                  {option.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center text-muted-foreground">
                       <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
                       {feature}
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
-                <Button 
-                  className={`w-full ${option.popular ? 'shadow-glow' : ''} transition-all duration-300`}
-                  variant={option.popular ? "default" : "outline"}
-                >
+                <Button className={`w-full ${option.popular ? 'shadow-glow' : ''} transition-all duration-300`} variant={option.popular ? "default" : "outline"}>
                   {option.popular ? 'Get Started' : 'Learn More'}
                 </Button>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Engineer Profiles */}
@@ -107,7 +78,7 @@ export const Staffing = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             <div className="text-center">
-              <Award className="h-12 w-12 text-accent mx-auto mb-3" />
+              
               <div className="text-2xl font-bold text-primary">50+</div>
               <div className="text-muted-foreground">Certified Engineers</div>
             </div>
@@ -128,15 +99,9 @@ export const Staffing = () => {
           <div className="text-center mb-6">
             <h4 className="text-xl font-semibold text-foreground mb-4">Our Engineers Hold These Certifications:</h4>
             <div className="flex flex-wrap justify-center gap-3">
-              {certifications.map((cert, index) => (
-                <Badge 
-                  key={index} 
-                  variant="outline" 
-                  className="text-sm border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                >
+              {certifications.map((cert, index) => <Badge key={index} variant="outline" className="text-sm border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
                   {cert}
-                </Badge>
-              ))}
+                </Badge>)}
             </div>
           </div>
 
@@ -147,6 +112,5 @@ export const Staffing = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
