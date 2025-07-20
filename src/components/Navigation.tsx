@@ -19,7 +19,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="text-2xl font-bold text-primary">
-            MS TechHub
+            TekWren
           </div>
 
           {/* Desktop Navigation */}
