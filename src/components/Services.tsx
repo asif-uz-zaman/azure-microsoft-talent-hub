@@ -64,9 +64,7 @@ export const Services = () => {
                       {feature}
                     </li>)}
                 </ul>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                  Learn More
-                </Button>
+                
               </CardContent>
             </Card>)}
         </div>
