@@ -21,28 +21,25 @@ export const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
             <Button size="lg" className="px-8 py-4 text-lg shadow-glow hover:shadow-professional transition-all duration-300 hover:scale-105">
-              Get a free consultation today
+              Get Started Today
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm">
-              <Play className="mr-2 h-5 w-5" />
-              Watch Demo
-            </Button>
+            
           </div>
           
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-scale-in">
             <div className="bg-card/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
-              <div className="text-3xl font-bold text-primary-glow">500+</div>
+              <div className="text-3xl font-bold text-primary-glow">70+</div>
               <div className="text-primary-foreground/80">Projects Delivered</div>
             </div>
             <div className="bg-card/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
-              <div className="text-3xl font-bold text-primary-glow">50+</div>
+              <div className="text-3xl font-bold text-primary-glow">40+</div>
               <div className="text-primary-foreground/80">Certified Engineers</div>
             </div>
             <div className="bg-card/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
               <div className="text-3xl font-bold text-primary-glow">24/7</div>
-              <div className="text-primary-foreground/80">Quality Support</div>
+              <div className="text-primary-foreground/80">Support Availability</div>
             </div>
           </div>
         </div>
