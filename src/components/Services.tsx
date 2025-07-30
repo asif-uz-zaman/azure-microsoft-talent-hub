@@ -30,7 +30,7 @@ export const Services = () => {
   }, {
     icon: <Cloud className="h-12 w-12 text-primary" />,
     title: "Ongoing Support",
-    description: "24/7 support and maintenance services to keep your Microsoft solutions running smoothly.",
+    description: "24/7 support and maintenance services to keep your IT systems & solutions running smoothly.",
     features: ["24/7 Monitoring", "Issue Resolution", "Updates & Patches", "Performance Tuning"]
   }];
   return <section id="services" className="py-20 bg-background">
