@@ -10,7 +10,7 @@ export const Services = () => {
   }, {
     icon: <Settings className="h-12 w-12 text-primary" />,
     title: "Implementation",
-    description: "Expert implementation of Microsoft solutions tailored to your business needs and requirements.",
+    description: "Expert deployment of cloud and digital solutions tailored to your business needs and requirements.",
     features: ["Custom Setup", "Integration", "Configuration", "Testing & Validation"]
   }, {
     icon: <Users className="h-12 w-12 text-primary" />,
