@@ -44,7 +44,7 @@ export const Contact = () => {
               animationDelay: `${index * 0.1}s`
             }}>
                   <CardHeader className="pb-4">
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-y-3">
                       {info.icon}
                       <CardTitle className="text-lg font-semibold text-foreground">
                         {info.title}
