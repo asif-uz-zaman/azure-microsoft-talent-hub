@@ -25,10 +25,7 @@ export const Staffing = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             <span className="text-primary">Certified Engineers</span> On Demand
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Access our pool of Microsoft-certified engineers from Bangladesh, delivering 
-            world-class expertise at competitive rates for US businesses.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Access our pool of certified engineers from Bangladesh, delivering world-class expertise at competitive rates for businesses in the US and beyond.</p>
         </div>
 
         {/* Staffing Options */}
@@ -60,9 +57,7 @@ export const Staffing = () => {
                       {feature}
                     </li>)}
                 </ul>
-                <Button className={`w-full ${option.popular ? 'shadow-glow' : ''} transition-all duration-300`} variant={option.popular ? "default" : "outline"}>
-                  {option.popular ? 'Get Started' : 'Learn More'}
-                </Button>
+                
               </CardContent>
             </Card>)}
         </div>
@@ -106,9 +101,7 @@ export const Staffing = () => {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="px-8 py-4 text-lg shadow-professional hover:shadow-glow transition-all duration-300">
-              View Available Engineers
-            </Button>
+            
           </div>
         </div>
       </div>

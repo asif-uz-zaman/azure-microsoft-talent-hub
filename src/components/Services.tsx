@@ -69,11 +69,7 @@ export const Services = () => {
             </Card>)}
         </div>
 
-        <div className="text-center mt-16 animate-scale-in">
-          <Button size="lg" className="px-8 py-4 text-lg shadow-professional hover:shadow-glow transition-all duration-300">
-            Schedule Free Consultation
-          </Button>
-        </div>
+        
       </div>
     </section>;
 };
