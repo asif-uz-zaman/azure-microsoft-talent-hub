@@ -35,9 +35,9 @@ export const Contact = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Ready to transform your business with leading technology solutions? Get in touch with our experts for a free consultation.</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div>
           {/* Contact Information */}
-          <div className="lg:col-span-1">
+          <div>
             <h3 className="text-2xl font-bold text-foreground mb-6">Get In Touch</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {contactInfo.map((info, index) => <Card key={index} className="bg-gradient-card border-border shadow-card hover:shadow-professional transition-all duration-300 animate-slide-up" style={{
