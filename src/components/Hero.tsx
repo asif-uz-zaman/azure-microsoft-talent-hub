@@ -13,7 +13,7 @@ export const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-primary-foreground">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Microsoft Technology
+            Technology Delivered with Excellence
             <span className="block bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-slate-100">
               Excellence Delivered
             </span>
