@@ -15,7 +15,7 @@ export const Services = () => {
   }, {
     icon: <Users className="h-12 w-12 text-primary" />,
     title: "Consultancy",
-    description: "Strategic consulting to optimize your Microsoft technology stack and maximize business value.",
+    description: "Strategic consulting to optimize your IT infrastructure, unlocking greater business value.",
     features: ["Architecture Design", "Best Practices", "Performance Optimization", "Strategic Planning"]
   }, {
     icon: <BookOpen className="h-12 w-12 text-primary" />,
