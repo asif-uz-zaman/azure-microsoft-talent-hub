@@ -14,12 +14,10 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Technology Delivered with Excellence
-            <span className="block bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-slate-100">
-              Excellence Delivered
-            </span>
+            
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">Transform your business with our expert Microsoft 365, Azure, and Copilot solutions. From migration to implementation, staffing to training - we deliver excellence across USA.</p>
+          <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">Empowering your business with tailored cloud, AI, and workplace solutions. Starting from deployment to migration, staffing to training, we deliver excellence across the USA, EMEA, and APAC.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
             <Button size="lg" className="px-8 py-4 text-lg shadow-glow hover:shadow-professional transition-all duration-300 hover:scale-105">
