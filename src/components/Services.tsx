@@ -5,7 +5,7 @@ export const Services = () => {
   const services = [{
     icon: <MoveRight className="h-12 w-12 text-primary" />,
     title: "Migration Services",
-    description: "Seamless migration from legacy systems to Microsoft 365 and Azure cloud platforms with zero downtime.",
+    description: "Seamless migration from legacy systems to Modern Workplace & Cloud Solutions with zero downtime.",
     features: ["Data Migration", "Email Migration", "Application Migration", "Infrastructure Migration"]
   }, {
     icon: <Settings className="h-12 w-12 text-primary" />,
