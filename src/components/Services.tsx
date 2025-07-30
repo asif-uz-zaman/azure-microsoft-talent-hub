@@ -20,7 +20,7 @@ export const Services = () => {
   }, {
     icon: <BookOpen className="h-12 w-12 text-primary" />,
     title: "Training & Workshops",
-    description: "Comprehensive training programs to empower your team with Microsoft technology expertise.",
+    description: "Comprehensive training programs to empower your team with expertise across leading technologies, including Microsoft, Google, AWS, and Red Hat.",
     features: ["Custom Training", "Certification Prep", "Hands-on Workshops", "Ongoing Support"]
   }, {
     icon: <ShieldCheck className="h-12 w-12 text-primary" />,
