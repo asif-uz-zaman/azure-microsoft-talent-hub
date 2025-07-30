@@ -35,16 +35,16 @@ export const Contact = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Ready to transform your business with leading technology solutions? Get in touch with our experts for a free consultation.</p>
         </div>
 
-        <div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact Information */}
-          <div>
+          <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold text-foreground mb-6">Get In Touch</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="space-y-6">
               {contactInfo.map((info, index) => <Card key={index} className="bg-gradient-card border-border shadow-card hover:shadow-professional transition-all duration-300 animate-slide-up" style={{
               animationDelay: `${index * 0.1}s`
             }}>
                   <CardHeader className="pb-4">
-                    <div className="flex-nowrap gap-6">
+                    <div className="flex items-center space-x-3">
                       {info.icon}
                       <CardTitle className="text-lg font-semibold text-foreground">
                         {info.title}
@@ -55,9 +55,7 @@ export const Contact = () => {
                     {info.details.map((detail, detailIndex) => <p key={detailIndex} className="text-muted-foreground mb-2">
                         {detail}
                       </p>)}
-                    <Button variant="outline" size="sm" className="mt-3 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                      {info.action}
-                    </Button>
+                    
                   </CardContent>
                 </Card>)}
             </div>
