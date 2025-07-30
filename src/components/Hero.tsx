@@ -6,7 +6,7 @@ export const Hero = () => {
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <img src={heroImage} alt="Microsoft Technology Solutions" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-overlay"></div>
+        <div className="absolute inset-0 bg-gradient-overlay bg-sky-950"></div>
       </div>
       
       {/* Content */}
@@ -14,7 +14,7 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Microsoft Technology
-            <span className="block bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-slate-100">
               Excellence Delivered
             </span>
           </h1>
