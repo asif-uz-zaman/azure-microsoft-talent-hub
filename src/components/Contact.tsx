@@ -39,12 +39,12 @@ export const Contact = () => {
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold text-foreground mb-6">Get In Touch</h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-6">
               {contactInfo.map((info, index) => <Card key={index} className="bg-gradient-card border-border shadow-card hover:shadow-professional transition-all duration-300 animate-slide-up" style={{
               animationDelay: `${index * 0.1}s`
             }}>
                   <CardHeader className="pb-4">
-                    <div className="flex items-center space-x-3">
+                    <div className="flex flex-nowrap gap-6 overflow-x-auto">
                       {info.icon}
                       <CardTitle className="text-lg font-semibold text-foreground">
                         {info.title}
