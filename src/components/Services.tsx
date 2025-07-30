@@ -26,7 +26,7 @@ export const Services = () => {
     icon: <ShieldCheck className="h-12 w-12 text-primary" />,
     title: "Audit & Compliance",
     description: "Thorough auditing of your IT environment, leveraging industry-leading security solutions from Palo Alto Networks, CrowdStrike, Fortinet, Check Point, Okta, SentinelOne, Splunk, and Tenable to ensure security, compliance, and performance optimization.",
-    features: ["Security Assessment", "Compliance Review", "Performance Audit", "Recommendations"]
+    features: ["System Hardening", "Compliance Review", "Performance Audit", "Recommendations"]
   }, {
     icon: <Cloud className="h-12 w-12 text-primary" />,
     title: "Ongoing Support",
