@@ -38,8 +38,8 @@ export const Contact = () => {
         <div>
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">Get In Touch</h3>
-            <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Get In Touch</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {contactInfo.map((info, index) => <Card key={index} className="bg-gradient-card border-border shadow-card hover:shadow-professional transition-all duration-300 animate-slide-up" style={{
               animationDelay: `${index * 0.1}s`
             }}>
