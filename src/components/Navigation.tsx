@@ -7,7 +7,7 @@ export const Navigation = () => {
 
   const navItems = [
     { name: "Services", href: "#services" },
-    { name: "Staffing", href: "#staffing" },
+    { name: "Staff Augmentation", href: "#staffing" },
     { name: "Training", href: "#training" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
